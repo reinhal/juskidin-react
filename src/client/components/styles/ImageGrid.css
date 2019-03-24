@@ -10,3 +10,7 @@
   height: auto;
   grid-row-end: span 2;
 }
+
+.ui.three.column.grid.image-grid {
+  margin-top: 40px;
+}

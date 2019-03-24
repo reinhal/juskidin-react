@@ -35,15 +35,13 @@ class LandingPage extends React.Component {
       <div className="landing-page">
         <div>
           <h1 className="juskidin-header">JusKidin</h1>
-          <h2>Support your children.  Keep all the memories.</h2>
+          <h2>Love your children.  Keep all the memories.</h2>
           <p className="juskidin-description">
-            Create profiles for each of your children. 
-            Connect to relevant web resources based on your child's age. 
-            Upload pictures you take of your child's artwork, schoolwork, 
-            sporting events and other special memories.
+            Simply upload photos of your children's lives: from adorable moments, to sporting events, 
+            school projects, or artwork. Choose to add a title and description.  Tag the photo with keywords.  
+            Later enjoy the memories by searching for tags or drawers.
           </p>
         </div>
-        <Button text="Here's How" />
         <ImageGrid onload={this.getImages} images={this.state.images}/>
         <Button text="Login" />
         <div>

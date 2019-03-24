@@ -6,6 +6,7 @@
 }
 
 .image-grid img {
-  width: 250px;
+  width: 100%;
+  height: auto;
   grid-row-end: span 2;
 }

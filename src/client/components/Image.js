@@ -1,13 +1,17 @@
 import React from 'react';
 
-const Image = () => {
-  return (
-    <div className="column">
-      <div className="ui segment">
-        <img />
+class Image extends React.Component {
+  
+  render() {
+    const { alt_description, urls} = this.props.image;
+    return (
+      <div className="column">
+        <div className="ui segment">
+          <img alt={alt_description} src={urls.regular}/>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Image;

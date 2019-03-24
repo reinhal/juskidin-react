@@ -2,9 +2,14 @@
   text-align: center;
 }
 
-
 .juskidin-header {
   font-size: 72px;
   text-shadow: 0px 8px 16px rgba(0,0,0,0.2);
 }
 
+.juskidin-description {
+  font-size: 17px;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}

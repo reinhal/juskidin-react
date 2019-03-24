@@ -5,7 +5,11 @@ import Button from './Button';
 import unsplash from '../api/unsplash';
 
 class LandingPage extends React.Component {
-  state = { images: [] };
+  constructor(props, context) {
+    super(props, context);
+ 
+    this.state = { images: [] };
+  }
 
 
   getImages = async () => {

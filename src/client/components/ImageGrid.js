@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from './Image';
-
+import '../styles/ImageGrid.css';
 
 
 const ImageGrid = props => {

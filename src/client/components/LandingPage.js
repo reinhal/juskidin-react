@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/LandingPage.css';
+import './styles/LandingPage.css';
 import ImageGrid from './ImageGrid';
 import Button from './Button';
 import unsplash from '../api/unsplash';

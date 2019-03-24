@@ -2,4 +2,12 @@ language: node_js
  node_js: node
  services:
      - mongodbr
+deploy:
+  provider: heroku
+  api_key:
+    secure: c201fe0b-6318-4290-a3df-a37a0eb656f6
+  app: juskidin-react
+  on:
+    repo: reinhal/juskidin-react
+
      

@@ -1,5 +1,6 @@
 import React from 'react';
-import LandingPage from './LandingPage';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Main from './Main';
 
 class App extends React.Component {
   state = { data: null }
@@ -22,10 +23,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="ui container">
-        <LandingPage />
-        <p>{this.state.data}</p>
-      </div>
+      <Router>
+         <div id='root' className="ui container">
+          <Main />
+        </div>
+      </Router>
     );
   }
 }

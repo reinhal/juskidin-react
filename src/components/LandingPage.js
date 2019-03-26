@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './styles/LandingPage.css';
 import ImageGrid from './ImageGrid';
 import Button from './Button';
@@ -42,6 +43,7 @@ class LandingPage extends React.Component {
             Later enjoy the memories by searching for tags or drawers.
           </p>
         </div>
+        <p><NavLink to="/dashboard">Dashboard</NavLink></p>
         <ImageGrid onload={this.getImages} images={this.state.images}/>
         <Button text="Login" />
         <div>

@@ -1,15 +1,13 @@
 import React from 'react';
-import UploadForm from './UploadForm';
 import AlbumList from './AlbumList';
-import NoPhotoMessage from './NoPhotoMessage';
+import AlbumMenu from './AlbumMenu';
 
 class Dashboard extends React.Component {
   render() {
     return (
       <div>
-        Dashboard
-        <UploadForm />
-        <NoPhotoMessage />
+        <h1 className="juskidin-header" style={{ textAlign: "center"}}>JusKidin</h1>
+        <AlbumMenu />
         <AlbumList />
       </div>
     )

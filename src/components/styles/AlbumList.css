@@ -1,3 +1,7 @@
-.album-list {
-  width: 25%;
+.album-section {
+  height: 93vh;
+}
+
+.album-tab {
+  height: 90vh;
 }

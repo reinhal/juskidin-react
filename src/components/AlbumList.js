@@ -4,14 +4,26 @@ import './styles/AlbumList.css';
 export default class AlbumList extends React.Component {
   render() {
     return (
-      <div className="ui segment album-list">
-        <div className="ui one column very relaxed grid">
-          <div className="column">
-            <div className="ui list">
-              <div className="item">Album One</div>
-              <div className="item">Album Two</div>
-              <div className="item">Album Three</div>
-            </div>
+      <div className="ui grid">
+        <div className="four wide column album-section">
+          <div className="ui vertical fluid tabular menu album-tab">
+            <a className="item active">
+              Deafult Album
+            </a>
+            <a className="item">
+              Album One
+            </a>
+            <a className="item">
+              Album Two
+            </a>
+            <a className="item">
+              Album Three
+            </a>
+          </div>
+        </div>
+        <div className="twelve wide stretched column album-section">
+          <div className="ui segment">
+            This is an stretched grid column. This segment will always match the tab height
           </div>
         </div>
       </div>

@@ -7,16 +7,16 @@ export default class AlbumList extends React.Component {
       <div className="ui grid">
         <div className="four wide column album-section">
           <div className="ui vertical fluid tabular menu album-tab">
-            <a className="item active">
+            <a className="item active" href="/">
               Deafult Album
             </a>
-            <a className="item">
+            <a className="item" href="/">
               Album One
             </a>
-            <a className="item">
+            <a className="item" href="/">
               Album Two
             </a>
-            <a className="item">
+            <a className="item" href="/">
               Album Three
             </a>
           </div>

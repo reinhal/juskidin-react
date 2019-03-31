@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
     "jwt-decode": "^2.2.0",
-    "mongoose": "^5.4.19",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-redux": "^6.0.1",
@@ -33,11 +29,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.2.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
-    "mocha": "^6.0.2",
     "react-test-renderer": "^16.8.5"
   }
 }

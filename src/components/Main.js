@@ -12,7 +12,7 @@ export default class Main extends React.Component {
           component={(props) => <LandingPage {...props.match} />}
           />
           <Route exact path='/dashboard'
-          component={(props) => <Dashboard {...props.match} />}
+          component={(props) => <Dashboard {...props.match}/>}
           />
         </Switch>
       </div>

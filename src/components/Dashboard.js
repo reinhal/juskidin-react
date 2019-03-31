@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AlbumList from './AlbumList';
+// import AlbumList from './AlbumList';
 import AlbumMenu from './AlbumMenu';
 import Spinner from './Spinner';
 import UploadImageButton from './UploadImageButton';

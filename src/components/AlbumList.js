@@ -1,4 +1,5 @@
 import React from 'react';
+import UploadedImage from './UploadedImage';
 import './styles/AlbumList.css';
 
 export default class AlbumList extends React.Component {
@@ -23,7 +24,7 @@ export default class AlbumList extends React.Component {
         </div>
         <div className="twelve wide stretched column album-section">
           <div className="ui segment">
-            This is an stretched grid column. This segment will always match the tab height
+            <UploadedImage />
           </div>
         </div>
       </div>

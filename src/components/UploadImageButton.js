@@ -1,14 +1,49 @@
 
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage } from '@fortawesome/free-solid-svg-icons';
+import axios from 'axios';
 
-export default props => 
-  <div className='buttons fadein'>
-    <div className='button'>
-      <label htmlFor='single'>
-        <FontAwesomeIcon icon={faImage} color='#3B5998' size='10x' />
-      </label>
-      <input type='file' id='single' onChange={props.onChange} /> 
-    </div>
-  </div>
+export default class UploadImage extends React.Component {
+  constructor(props) {
+    super(props); 
+    
+    this.state= {
+      imageURL: ''
+    };
+
+    this.handleUploadImage = this.handleUploadImage.bind(this);
+  }
+
+  handleUploadImage(e) {
+    e.preventDefault();
+
+    const imageData = new FormData();
+    imageData.append('new-image', this.uploadInput.files[0]);
+    imageData.append('photo-title', this.)
+  }
+
+  render() {
+    return (
+      <div className="ui segment">
+        <form onSubmit={this.onFormSubmit} id="imageUploadForm" className="ui form">
+          <div className="field">
+            <label>Title</label>
+            <input type="text" name="photo-title" placeholder="Enter a title" />
+          </div>
+          {/* <div className="field">
+            <label>Notes</label>
+            <input type="text" name="notes" placeholder="Share some notes" />
+          </div>
+          <div className="field">
+            <label>Album</label>
+            <input type="text" name="album" placeholder="Use an existing album or create a new one" />
+          </div> */}
+          <div className="field">
+            <label>Image</label>
+            <input type="file" name="new-image" placeholder="Upload a photo" />
+          </div>
+          <button className="ui button" type="submit">Upload</button>
+        </form>
+      </div> 
+    );
+  }
+} 

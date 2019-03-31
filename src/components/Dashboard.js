@@ -21,6 +21,7 @@ export default class Dashboard extends Component {
 
     files.forEach((file, i) => {
       formData.append(i, file)
+      console.log(formData);
     });
 
     fetch(`${API_BASE_URL}/image-upload`, {

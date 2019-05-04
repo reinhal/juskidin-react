@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import AlbumList from './AlbumList';
+import AlbumList from './AlbumList';
 import AlbumMenu from './AlbumMenu';
 import Spinner from './Spinner';
 import UploadImageButton from './UploadImageButton';
@@ -17,6 +17,7 @@ export default class Dashboard extends Component {
   onChange = e => {
     const files = Array.from(e.target.files);
     this.setState({ uploading: true });
+
     const formData = new FormData();
 
     files.forEach((file, i) => {
@@ -60,6 +61,7 @@ export default class Dashboard extends Component {
       <div>
         <h1 className="juskidin-header" style={{ textAlign: "center"}}>JusKidin</h1>
         <AlbumMenu />
+        <AlbumList />
         {content()}
       </div>
     )
